@@ -90,11 +90,11 @@ public:
         consensus.BIP66Height = consensus.nFirstPoSBlock;
         consensus.powLimit = uint256S("0000ffff00000000000000000000000000000000000000000000000000000000");
         //consensus.powLimit = uint256S("0000f000000000000000");
-        consensus.posLimit = uint256S("0000fffff0000000000000000000000000000000000000000000000000000000");
+        consensus.posLimit = uint256S("000fffff00000000000000000000000000000000000000000000000000000000");
         consensus.nPowTargetTimespan = 3 * 60;
         consensus.nPowTargetSpacing = 3 * 60;
-        consensus.nPosTargetSpacing = consensus.nPowTargetSpacing;
-        consensus.nPosTargetTimespan = consensus.nPowTargetTimespan;
+        consensus.nPosTargetSpacing = 1 * 90;
+        consensus.nPosTargetTimespan = 1 * 90;
         consensus.nMasternodeMinimumConfirmations = 4;
         consensus.nStakeMinAge = 60 * 60;
         consensus.nStakeMaxAge = 60 * 60 * 24 * 30;
